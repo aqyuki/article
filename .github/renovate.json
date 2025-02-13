@@ -1,0 +1,11 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended", ":semanticCommitTypeAll(chore)"],
+  "packageRules": [
+    {
+      "groupName": "all non-major",
+      "matchPackagePatterns": ["*"],
+      "updateTypes": ["minor", "patch"]
+    }
+  ]
+}
